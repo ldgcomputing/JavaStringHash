@@ -45,11 +45,11 @@ public class test {
 
 This is because, underneath, the Java compiler generates the following:
 
-> Compute the hash of the string
-> Jump through a lookup table
-> Check that the strings are identical
-> If not identical, jump to the default (if any)
-> If identical, process
+1. Compute the hash of the string
+1. Jump through a lookup table
+1. Check that the strings are identical
+1. If not identical, jump to the default (if any)
+1. If identical, process
 
 To obtain a 100% code coverage, strings with identical hashes need to be
 passed through the switch as well.  If completely arbitrary strings can
